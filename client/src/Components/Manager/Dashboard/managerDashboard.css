@@ -1,0 +1,367 @@
+.manager-dashboard {
+  /* Manager Dashboard */
+
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+
+  background: url("https://www.totaljobs.com/advice/wp-content/uploads/area-manager-job-description.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.manager-dashboard-heading {
+  /* FROST BOOKSHOP */
+
+  position: absolute;
+  width: 382px;
+  height: 78px;
+  left: 100px;
+  top: 5px;
+
+  /* Header 1 */
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #faf8f8;
+}
+.manager-dashboard .sales-transaction-title {
+  /* Sales & Transactions */
+
+  position: absolute;
+  width: 122px;
+  height: 23px;
+  left: 150px;
+  top: 145px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #faf8f8;
+}
+.manager-dashboard .edit-profile-title {
+  /* Edit Profile */
+
+  position: absolute;
+  width: 122px;
+  height: 23px;
+  left: 167px;
+  top: 384px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+.manager-dashboard .items-title {
+  /* Items */
+
+  position: absolute;
+  width: 122px;
+  height: 23px;
+  left: 880px;
+  top: 145px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+.manager-dashboard .employees-title {
+  /* Employees */
+
+  position: absolute;
+  width: 122px;
+  height: 23px;
+  left: 520px;
+  top: 145px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+.manager-dashboard .sales-div {
+  /* Rectangle 33 */
+
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  left: 151px;
+  top: 185px;
+
+  background: rgba(196, 196, 196, 0.42);
+}
+.manager-dashboard .employees-div {
+  /* Rectangle 36 */
+
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  left: 500px;
+  top: 175px;
+
+  background: rgba(196, 196, 196, 0.42);
+}
+.manager-dashboard .items-div {
+  /* Rectangle 40 */
+
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  left: 840px;
+  top: 175px;
+
+  background: rgba(196, 196, 196, 0.42);
+}
+.edit-profile-div {
+  /* Rectangle 50 */
+
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  left: 151px;
+  top: 414px;
+
+  background: rgba(196, 196, 196, 0.42);
+}
+
+.manager-dashboard .manager-dashboard-transactions {
+  /* Vector */
+
+  position: relative;
+  left: 4.5%;
+  right: 0%;
+  top: 25%;
+  bottom: 0%;
+}
+.manager-dashboard-employees{
+  position: absolute;
+  left: 5%;
+  right: 0%;
+  top: 25%;
+  bottom: 0%;
+}
+
+.manager-dashboard-item{
+  position: absolute;
+  left: 5%;
+  right: 0%;
+  top: 25%;
+  bottom: 0%;
+}
+
+.pencil-dashboard{
+  /* Rectangle 46 */
+
+  position: absolute;
+  width: 57px;
+  height: 59px;
+  left: 1052px;
+  top: 175px;
+
+  background: rgba(232, 72, 72, 0.45);
+}
+
+.pen-dashboard{
+  /* Rectangle 47 */
+
+  position: absolute;
+  width: 57px;
+  height: 59px;
+  left: 985px;
+  top: 175px;
+
+  background: rgba(232, 72, 72, 0.45);
+}
+.primary-dashboard{
+  /* Rectangle 48 */
+
+  position: absolute;
+  width: 57px;
+  height: 59px;
+  left: 985px;
+  top: 245px;
+
+  background: rgba(232, 72, 72, 0.45);
+}
+.exercisebook-dashboard{
+  /* Rectangle 49 */
+
+  position: absolute;
+  width: 57px;
+  height: 59px;
+  left: 1052px;
+  top: 245px;
+
+  background: rgba(232, 72, 72, 0.45);
+}
+
+.manager-dashboard .btn{
+
+position: absolute;
+width: 87px;
+height: 50px;
+right: 59px;
+font-weight: 400;
+font-size: medium;
+top: 76px;
+color: #faf8f8;
+border: none;
+background: rgba(81, 88, 196, 0.1);
+border-radius: 15px;
+
+ }
+ .employees-display{
+  position: absolute;
+  width: 35px;
+  height: 18px;
+  right: 8px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+ }
+ .transactions-display{
+  position: absolute;
+  width: 35px;
+  height: 18px;
+  right: 8px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+ }
+ .items-display{
+  position: absolute;
+  width: 35px;
+  height: 18px;
+  right: 8px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+ }
+
+.primary-display{
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  left: 23px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+}
+.pen-display{
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  left: 23px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+}
+.exercisebook-display{
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  left: 23px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+}
+.item-list-text{
+  position: relative;
+  color: #faf8f8;
+  top: 99px;
+}
+.transactions-text{
+  position: relative;
+  color: #faf8f8;
+  top: 49px;
+}
+.employee-list-text{
+  position: relative;
+  color: #faf8f8;
+  top: 99px;
+}
+.pencil-display{
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  left: 23px;
+  top: 9px;
+  background: rgba(241, 240, 245, 0.69);
+  border-radius: 3px;
+  color: #faf8f8;
+}
+.manager-q-text{
+  top: 59px;
+  position: relative;
+  color: #faf8f8;
+}
+.frostbookshop-text{
+  top: 99px;
+  position: relative;
+  color: #faf8f8;
+}
+/* .pencil-text{
+  color: #faf8f8;
+  position: relative;
+  top: 40px;
+}
+.pen-text{
+  color: #faf8f8;
+  position: relative;
+  top: 40px;
+}
+.primary-text{
+  color: #faf8f8;
+  position: relative;
+  top: 40px;
+}
+.exercisebook-text{
+  color: #faf8f8;
+  position: relative;
+  top: 40px; */
+/* } */

@@ -1,0 +1,65 @@
+/* Example of css to prevent css overlap */
+/* Emphasis on using the "super" parent class, ie. "sign-in" */
+
+.sign-in div p{
+    color: beige;
+}
+
+.login-inputs-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+     height: 160px;
+}
+.login-inputs-container input{
+    border-radius: 6px;
+    padding: 10px;
+    padding-left: 40px;
+    opacity: 0.7;
+    height: 27px;
+    border: 1.5px solid #ccc;
+    resize: vertical;
+    width: 70%;
+}
+.login-button-form{
+    display: flex;
+    justify-content: space-evenly;
+}
+.login-button-form button{
+    margin-top: 10px;
+    height: 35px;
+    width: 120px;
+    background: white;
+    color: blue;
+    border-color: blue;
+    border-radius: 15px;
+}
+.login_forgot_password span{
+    color: blue;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+
+}
+.login-checkbox label{
+    display: inline;
+    margin: auto;
+    margin-bottom: 40px;
+    color: blue;
+}
+.login_left_icon{
+    font-size: 1.0rem;
+    color: #ccc;
+    position: absolute;
+    margin: 0.7rem ;
+}
+
+#login_view_pass{
+    font-size: 1.5rem;
+    color: #ccc;
+    margin: 0.7rem ;
+    position: absolute;
+    left: 35%;
+}

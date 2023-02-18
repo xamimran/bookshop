@@ -1,0 +1,18 @@
+/* Example of css to prevent css overlap */
+/* Emphasis on using the "super" parent class, ie. "manager-desktop" */
+.manager-desktop{
+    display: flex;
+    background: url("https://beslick.com/wp-content/uploads/2021/09/bestmanagementbooks-19.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.manager-desktop div p{
+    color: beige;
+    /* ...more css */
+}
+
+
+    /* ...more css */

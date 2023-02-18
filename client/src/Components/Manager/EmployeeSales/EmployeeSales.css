@@ -1,0 +1,83 @@
+/* Example of css to prevent css overlap */
+/* Emphasis on using the "super" parent class, ie. "employee-sales" */
+@import url('https://fonts.googleapis.com/css?family=Work Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.employee-sales-history{
+  background: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_quality_manager.jpg");
+  background-size: cover;
+}
+.employee-sales-history div{
+  width: 100%;
+}
+.employee-sales {
+  background: transparent;
+  width: 82%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 70vh;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(146, 175, 194);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 65, 62);
+  border-radius: 10px;
+}
+.employee-sales h1 {
+  color: white;
+  font-size: 42px;
+  margin-left: 67px;
+  position: fixed;
+  background: transparent;
+  font-family: 'Lato';
+  font-weight: 400;
+
+  /* ...more css */
+}
+
+.employee-sales table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: auto;
+  position: relative;
+  top: 17rem;
+  margin: 0 2rem 0 1rem;
+  color: white;
+  background: transparent;
+  height: 50vh;
+  overflow-y: scroll;
+  /* ...more css */
+}
+.employee-sales table thead th {
+  /* position:absolute; */
+  border-bottom: solid white 1px;
+  height: 15px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-style: 'Work Sans';
+}
+.employee-sales table td {
+  /* border:solid white 1px; */
+  border: none;
+  border-bottom: solid white 1px;
+  /* height: 26px; */
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.employee-sales table tbody tr:hover {
+  background: rgba(80, 83, 121, 0.315);
+  cursor: pointer;
+}
+
+.employee-sales table td:nth-child(1) {
+  max-width: 4rem;
+  padding-left: 1rem;
+}
+
+.employee-sales table {
+  height: min-content;
+}

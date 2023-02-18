@@ -1,0 +1,123 @@
+@import "./employees.css";
+.employees{
+    /* ...more css */
+    height: 77.5vh;
+    width: 100%;
+    margin-top: 20vh;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .search-main{
+        position: fixed;
+        top: 15vh;
+        display: flex;
+        background: rgba(196, 196, 196, 0.1);
+        border-radius: 10px;
+        padding: 12px 36px 12px 12px;
+        width: 60vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        *{justify-self: center;}
+        .search-bar{
+            input{
+                width:17rem;
+                outline: none;
+                border: solid 2px white;
+                color: white;
+                background: transparent;
+                padding: 0.45rem 1rem;
+                border-radius: 2rem;
+                z-index: 0;
+                &::placeholder{
+                    color: white;
+                    transition: all 0.5s;
+                }
+                &:focus{
+                    &::placeholder{
+                        transform:scale(0);
+                        z-index: 1;
+                        transform-origin: bottom right;
+                    }
+                }
+            }
+            .search-icon{
+                position: relative;
+                left: -2rem;
+                top: 0.25rem;
+            }
+        }
+        .add{
+            .add-icon{
+                cursor: pointer;
+                transition: all 0.75s;
+                &:hover{
+                    scale:1.25;
+                }
+            }
+        }
+    }
+    .employee-cards{
+        height:100%;
+        width: 90%;
+        margin-top: 2.5rem;
+        position: relative;
+        left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        .employee-card{
+            /* ...more css */
+            width: 15rem;
+            height: 12.5rem;
+            border-radius: 0.5rem;
+            margin: 1rem;
+            background: white;
+            transition: all 0.95s;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            p{
+                color: black;
+                /* ...more css */
+            }
+            .employee-error, .success-delete{
+                justify-self: center;
+                width: 15rem;
+                height: 12.5rem;
+                border-radius: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{color: white;}
+            }
+            .employee-error{
+            background-color: rgb(252, 139, 139);}
+            .success-delete{
+            background-color: rgb(172, 122, 58);}
+            .buttons{
+                cursor: pointer;
+                align-items: center;
+                img{
+                    height: 15.5px;
+                    width: 15.5px;
+                    scale: 0.85  ;
+                    object-fit: contain;
+                    margin: 0 1rem;
+                    border-radius: 3px;
+                    transition: all 0.25s ease;
+                    &:hover{
+                        scale: 1;
+                    }
+                    &:active{
+                        transform: scale(0.75);
+                    }
+                }
+            }
+        }
+        .employee-loading{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,92 @@
+/* Example of css to prevent css overlap */
+/* Emphasis on using the "super" parent class, ie. "landing-page" */
+
+.landing-page {
+  background-image: url("https://i.pinimg.com/originals/95/f8/58/95f8588d6469a16271ea2d2fad419d00.png");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  min-width:1060px;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+.landing-page div {
+  display: flex;
+  color: white;
+}
+
+.landing-page div p {
+  color: beige;
+}
+
+.landing-page div span {
+}
+.landing-page-nav {
+  display: inline;
+    
+}
+.landing-page-nav h2 {
+  width: 50%;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.landing-button {
+  margin-left: 50%;
+}
+.landing-button button,#landing-join-us-button {
+  height: 50px;
+  width: 150px;
+  padding-right: 30px;
+  color: red;
+  border: 2px solid #252525;
+  border-color: #030303;
+  border-radius: 18px;
+  margin: 20px 30px 0 20px;
+  background: darkgrey;
+  
+}
+.landing-page-message h1 {
+  width: 40%;
+  font-weight: 350;
+  font-size: 50px;
+  margin-top: 70px;
+  text-align: left;
+  margin-left: 3%;
+  
+  
+}
+.landing-page-message img {
+    margin-top: 0px;
+    margin-left: 320px;
+}
+.landing-page-message h5 {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 50px;
+  width: 37%;
+  text-align: left;
+  color: #030303;
+  
+  
+}
+#landing-join-us-button {
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-size: 17px;
+  padding-left: 29px;
+}
+.landing_page_icon{
+  font-size: 1.5rem;
+  color: #ccc;
+  position: absolute;
+  margin: 0rem ;
+  margin-left: 105px;
+  margin-top: 25px;
+}

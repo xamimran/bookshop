@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.item-card{
+  background-color: #c0c7c2;
+  right: 120px;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.novodecor.co.za%2Fen%2Fdecor%2Fdark-grey-l167%2F%3Frel_col%3Dantiviral-collection&psig=AOvVaw0tFHSzwtrsKsBpFHwiCuHD&ust=1676360563641000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNiRgvH_kf0CFQAAAAAdAAAAABAT");
+}
+.point-of-sale .sale-items-div .all-items,
+.point-of-sale .sale-items-div .cart-items {
+  height: 50vh;
+  width: 97.5%;
+  overflow-y: scroll;
+}
+.point-of-sale .sale-items-div .all-items .item-card,
+.point-of-sale .sale-items-div .cart-items .item-card {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0rem 1rem;
+  border-bottom: 1px solid rgba(112, 87, 87, 0.38);
+  padding: 18px 0 0 0;
+  transition: all 0.5s;
+  cursor: default;
+}
+.point-of-sale .sale-items-div .all-items .item-card:hover,
+.point-of-sale .sale-items-div .cart-items .item-card:hover {
+  background: rgba(196, 196, 196, 0.18);
+}
+.point-of-sale .sale-items-div .all-items .item-card div,
+.point-of-sale .sale-items-div .cart-items .item-card div {
+  display: inline-flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Lato";
+}
+.point-of-sale .sale-items-div .all-items .item-card div.div-40,
+.point-of-sale .sale-items-div .cart-items .item-card div.div-40 {
+  width: 20%;
+}
+.point-of-sale .sale-items-div .all-items .item-card div.div-20,
+.point-of-sale .sale-items-div .cart-items .item-card div.div-20 {
+  width: 10%;
+}
+.point-of-sale .sale-items-div .all-items .item-card div img,
+.point-of-sale .sale-items-div .cart-items .item-card div img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.point-of-sale .sale-items-div .all-items .item-card div.sell-qty,
+.point-of-sale .sale-items-div .cart-items .item-card div.sell-qty {
+  display: block;
+}
+.point-of-sale .sale-items-div .all-items .item-card div.sell-qty button,
+.point-of-sale .sale-items-div .cart-items .item-card div.sell-qty button {
+  display: none;
+  padding: 3px 10px;
+  transform: translateY(-1rem);
+  color: white;
+  font-size: 10px;
+  margin: 0.2rem;
+  background: rgba(94, 85, 85, 0.62);
+  border-radius: 3px;
+  border: none;
+  transition: all 0.2s;
+}
+.point-of-sale .sale-items-div .all-items .item-card:hover .sell-qty button,
+.point-of-sale .sale-items-div .cart-items .item-card:hover .sell-qty button {
+  display: inline-block;
+}
+.point-of-sale .sale-items-div .all-items .item-card .price-and-checkbox,
+.point-of-sale .sale-items-div .cart-items .item-card .price-and-checkbox {
+  position: relative;
+  left: 5%;
+  margin-left: -5rem;
+}
+.point-of-sale .sale-items-div .all-items .item-card .price-and-checkbox .custom-checkbox,
+.point-of-sale .sale-items-div .all-items .item-card .price-and-checkbox img,
+.point-of-sale .sale-items-div .cart-items .item-card .price-and-checkbox .custom-checkbox,
+.point-of-sale .sale-items-div .cart-items .item-card .price-and-checkbox img {
+  cursor: pointer;
+}
+.point-of-sale .sale-items-div .all-items .item-card .price-and-checkbox .custom-checkbox,
+.point-of-sale .sale-items-div .cart-items .item-card .price-and-checkbox .custom-checkbox {
+  margin-left: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.point-of-sale .sale-items-div .all-items .item-card .price-and-checkbox img,
+.point-of-sale .sale-items-div .cart-items .item-card .price-and-checkbox img {
+  object-fit: contain;
+  margin-left: 2rem;
+  width: 17.46px;
+}
+
+.point-of-sale .pos-sidebar {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 15rem;
+  background-image: url("./background.svg");
+  background-position: center;
+  background-size: cover;
+}
+.point-of-sale .pos-sidebar h1 {
+  margin: 3.2rem 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+}
+.point-of-sale .pos-sidebar * {
+  color: white;
+}
+.point-of-sale .pos-sidebar hr {
+  margin: 2rem;
+  border: solid 1px #fff;
+}
+.point-of-sale .pos-sidebar .input-btn {
+  color: white;
+  background-color: #5e5555;
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 11rem;
+  display: block;
+  font-weight: 700;
+  justify-content: center;
+  cursor: pointer;
+  margin: 2rem auto;
+}
+.point-of-sale .pos-sidebar .input-btn:hover {
+  background-color: #3d9a57;
+  transition: 0.9s;
+}
+
+.point-of-sale .pos-sidebar {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 15rem;
+  background-image: url("https://i.pinimg.com/236x/76/d0/cb/76d0cb78c24fcd2447da14470e935c80.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.point-of-sale .pos-sidebar h1 {
+  margin: 3.2rem 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+}
+.point-of-sale .pos-sidebar * {
+  color: white;
+}
+.point-of-sale .pos-sidebar hr {
+  margin: 2rem;
+  border: solid 1px #fff;
+}
+.point-of-sale .pos-sidebar .input-btn {
+  color: white;
+  background-color: #5e5555;
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 11rem;
+  display: block;
+  font-weight: 700;
+  justify-content: center;
+  cursor: pointer;
+  margin: 2rem auto;
+}
+.point-of-sale .pos-sidebar .input-btn:hover {
+  background-color: #3d9a57;
+  transition: 0.9s;
+}
+
+.point-of-sale .sale-items-div .search-div {
+  width: 92.75%;
+  margin: auto;
+  margin-right: 2%;
+  padding: 11px 23px 11px 14px;
+  margin-top: 2%;
+  background: rgba(247, 245, 245, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+.point-of-sale .sale-items-div .search-div input {
+  width: 18rem;
+  outline: none;
+  border: solid 2px rgb(121, 117, 117);
+  color: rgb(216, 213, 213);
+  background: transparent;
+  padding: 0.45rem 1rem;
+  border-radius: 2rem;
+  z-index: 0;
+}
+.point-of-sale .sale-items-div .search-div img {
+  cursor: pointer;
+}
+
+.point-of-sale {
+  display: flex;
+  min-width: 1000px;
+  width: 100%;
+  height: 100%;
+}
+.point-of-sale .sale-items-div {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.point-of-sale .sale-items-div .items-header {
+  display: flex;
+  width: 87.25%;
+  height: 4.5rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid rgba(112, 87, 87, 0.38);
+  justify-content: space-around;
+}
+.point-of-sale .sale-items-div .items-header h3 {
+  margin-left: 21.9%;
+  margin-right: 2.3%;
+ 
+  font-style: normal;
+}
+
+
+.point-of-sale .sale-items-div .items-header h3:last-child {
+  position: relative;
+  left: -12.5%;
+}
+.point-of-sale .sale-items-div .sale-calc-main {
+  display: flex;
+  flex-direction: column;
+  width: 82.75%;
+  height: 30%;
+  margin-right: 9%;
+  padding: 11px 23px 23px 14px;
+  background: rgba(138, 17, 17, 0.1);
+  border-radius: 15px;
+  top: 80px;
+  
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main {
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 40%;
+  top: 40%;
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div * {
+  margin: 0;
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div.total-h4s {
+  text-align: right;
+  left: 30%;
+  top: 80%
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div.total-h4s .change {
+  position: relative;
+  top: 2.25vh;
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div.total-text {
+  text-align: left;
+  margin: 0 1rem;
+  top: 80%
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div.total-text input {
+  outline: none;
+  border: none;
+}
+.point-of-sale .sale-items-div .sale-calc-main .flex-main div.total-text .change {
+  position: relative;
+  top: 2.25vh;
+}
+.point-of-sale .sale-items-div .sale-calc-main hr {
+  margin: 0;
+  position: relative;
+  top: -2.45vh;
+}
+
+.items-header .publisher{
+  left: 0%;
+  top: 0%;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17px;
+  
+}
+td, th{
+  border: 1px solid #a9a9a9;
+  padding: 8px;
+}
+tr{
+  text-align: center;
+}

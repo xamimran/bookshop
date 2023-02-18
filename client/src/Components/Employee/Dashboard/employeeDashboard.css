@@ -1,0 +1,147 @@
+/* Example of css to prevent css overlap */
+/* Emphasis on using the "super" parent class, ie. "employee-dashboard" */
+.employee-dashboard {
+  display: flex;
+  position: relative;
+  min-width: 240px;
+  min-height: 998px;
+  margin: 0%;
+  background: url("https://imageio.forbes.com/blogs-images/louiscolumbus/files/2018/12/10-Ways-ML-is-Revolutionizing-Sales.jpg?format=jpg&width=960");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+.employee-dashboard-heading {
+  
+  position: relative;
+  width: 382px;
+  height: 78px;
+  left: 100px;
+  top: 39px;
+
+  /* Header 1 */
+  font-family: "Lato", "Helvetica Neue";
+  font-style: normal;
+  font-weight: 1000;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  font-size: 58px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #f0eaea;
+}
+
+.employee-dashboard .pointofsale-title {
+
+  position: absolute;
+  width: 122px;
+  height: 23px;
+  left: 100px;
+  top: 198px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #faf8f8;
+}
+
+.employee-dashboard .make-a-sale {
+
+
+  position: absolute;
+  width: 356px;
+  height: 129px;
+  left: 1392px;
+  top: 170px;
+
+
+  background: rgba(211, 205, 205, 0.8);
+}
+.employee-dashboard .sales-history {
+  /* Rectangle 32 */
+
+  position: absolute;
+  width: 356px;
+  height: 129px;
+  right: 120px;
+  top: 570px;
+
+  background: rgba(196, 196, 196, 0.8);
+
+}
+.employee-dashboard .make-sale-telephone {
+  /* Vector */
+
+
+  position: absolute;
+  left: 34%;
+  right: 41%;
+  top: 18.68%;
+  bottom: 29.46%;
+}
+
+
+.employee-dashboard .sales-history-svg {
+
+  position: absolute;
+  left: 34%;
+  right: 41%;
+  top: 28.68%;
+  bottom: 29.46%;
+}
+
+.employee-dashboard .button {
+  /* Rectangle 7 */
+  font-weight: 700;
+  position: absolute;
+  font-style: normal;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+
+  left: 1531px;
+  top: 39px;
+  color: rgb(4, 64, 94);
+  background: red;
+  border-radius: 15px;
+  border: none;
+
+
+}
+
+.make-a-sale-text {
+  color: blue;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-size: larger;
+}
+.sales-history-text{
+  color: blue;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-size: larger;
+}
+.total-transactions{
+position: absolute;
+width: 38px;
+height: 22px;
+right: 14px;
+top: 9px;
+background: rgba(205, 198, 240, 0.69);
+border-radius: 3px;
+color: black;
+
+}

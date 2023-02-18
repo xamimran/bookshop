@@ -1,0 +1,121 @@
+.manager-dashboard {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+  min-width: 800px;
+  background: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_quality_manager.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.manager-dashboard .title-and-time {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3rem;
+}
+.manager-dashboard .logout {
+  position: relative;
+  left: 90%;
+  top: -5%;
+  max-width: min-content;
+  background-color: rgba(196, 196, 196, 0.1);
+  border-radius: 15px;
+  padding: 13px 17px;
+}
+.manager-dashboard .logout img {
+  width: 24px;
+  height: 24px;
+}
+.manager-dashboard .dashboard-all-items {
+  height: 35%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  
+}
+.manager-dashboard .dashboard-all-items div {
+  color: red;
+  cursor: pointer;
+}
+.manager-dashboard .dashboard-all-items div .employees-h3 {
+  margin-left: -3rem;
+}
+.manager-dashboard .dashboard-all-items div .div-glass,
+.manager-dashboard .dashboard-all-items div .items-alert {
+  width: 129px;
+  height: 129px;
+}
+.manager-dashboard .dashboard-all-items div .div-glass {
+  width: 129px;
+  height: 129px;
+  background: rgba(196, 196, 196, 0.42);
+  display: flex;
+  flex-direction: column;
+}
+.manager-dashboard .dashboard-all-items div .div-glass span {
+  position: relative;
+  width: 15%;
+  top: 10%;
+  left: 52.5%;
+  padding: 5px 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  background: rgba(209, 183, 183, 0.36);
+  border-radius: 3px;
+}
+.manager-dashboard .dashboard-all-items div .div-glass img {
+  margin: auto;
+}
+.manager-dashboard .dashboard-all-items div .div-glass img.employees {
+  width: 59px;
+  height: 53px;
+  object-fit: fill;
+}
+.manager-dashboard .dashboard-all-items div .div-glass small {
+  font-size: 10px;
+  transform: translate(-20%, -50%);
+}
+.manager-dashboard .dashboard-all-items div .div-glass small.profile {
+  transform: translate(10%, 900%);
+  text-align: left;
+}
+.manager-dashboard .dashboard-all-items div .items-main-div {
+  transform: translateX(35%);
+  display: flex;
+}
+.manager-dashboard .dashboard-all-items div .items-main-div .items-alert {
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.manager-dashboard .dashboard-all-items div .items-main-div .items-alert div {
+  background: rgba(232, 72, 72, 0.45);
+  max-width: 2rem;
+  height: 2rem;
+  padding: 10px;
+  margin: 5px;
+}
+.manager-dashboard .dashboard-all-items div .items-main-div .items-alert div p {
+  transform: translateY(-100%);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.manager-dashboard .dashboard-all-items div .items-main-div .items-alert div span {
+  background-color: black;
+  padding: 3px 7px;
+  background: rgba(209, 183, 183, 0.36);
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+  position: relative;
+  top: -30%;
+  right: -30%;
+}

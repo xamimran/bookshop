@@ -1,0 +1,50 @@
+.manager-sidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 15rem;
+  background-image: url("https://img.freepik.com/premium-photo/old-black-brick-wall-background_73152-4032.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.manager-sidebar .book-reader {
+  margin-top: 1.3rem;
+}
+.manager-sidebar * {
+  color: white;
+}
+.manager-sidebar hr,
+.manager-sidebar a {
+  margin-left: 2rem;
+}
+.manager-sidebar a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 1.4rem;
+} 
+.manager-sidebar a span {
+  width: 75%;
+}
+.manager-sidebar .bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.manager-sidebar .bottom hr {
+  margin-bottom: 1rem;
+}
+.manager-sidebar .bottom div {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.manager-sidebar .bottom div span {
+  width: 75%;
+}
+.manager-sidebar .bottom div:hover {
+  cursor: pointer;
+}

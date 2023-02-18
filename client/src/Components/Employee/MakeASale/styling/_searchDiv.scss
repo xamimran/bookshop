@@ -1,0 +1,29 @@
+.point-of-sale {
+  .sale-items-div {
+    .search-div {
+      width: 92.75%;
+      margin: auto;
+      margin-right: 2%;
+      padding: 11px 23px 11px 14px;
+      margin-top: 2%;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      display: flex;
+      justify-items: center;
+      justify-content: space-between;
+      input {
+        width: 17rem;
+        outline: none;
+        border: solid 2px rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        background: transparent;
+        padding: 0.45rem 1rem;
+        border-radius: 2rem;
+        z-index: 0;
+      }
+      img{
+        cursor: pointer;
+      }
+    }
+  }
+}

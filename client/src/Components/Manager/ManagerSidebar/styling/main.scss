@@ -1,0 +1,50 @@
+.manager-sidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 15rem;
+  background-image: url('./background.svg');
+  background-position: center;
+  background-size: cover;
+  .book-reader {
+    margin-top: 1.3rem;
+  }
+  * {
+    color: white;
+  }
+  hr,
+  a {
+    margin-left: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 1.4rem;
+    span {
+      width: 75%;
+    }
+  }
+  .bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    hr{
+      margin-bottom: 1rem;
+    }
+      div {
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      display: flex;
+      align-items: center;
+      span {
+        width: 75%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "./employees.css";
+.employees {
+  /* ...more css */
+  height: 77.5vh;
+  width: 100%;
+  margin-top: 20vh;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.employees .search-main {
+  position: fixed;
+  top: 15vh;
+  display: flex;
+  background: rgba(196, 196, 196, 0.1);
+  border-radius: 10px;
+  padding: 12px 36px 12px 12px;
+  width: 60vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.employees .search-main * {
+  justify-self: center;
+}
+.employees .search-main .search-bar input {
+  width: 17rem;
+  outline: none;
+  border: solid 2px white;
+  color: white;
+  background: transparent;
+  padding: 0.45rem 1rem;
+  border-radius: 2rem;
+  z-index: 0;
+}
+.employees .search-main .search-bar input::placeholder {
+  color: white;
+  transition: all 0.5s;
+}
+.employees .search-main .search-bar input:focus::placeholder {
+  transform: scale(0);
+  z-index: 1;
+  transform-origin: bottom right;
+}
+.employees .search-main .search-bar .search-icon {
+  position: relative;
+  left: -2rem;
+  top: 0.25rem;
+}
+.employees .search-main .add .add-icon {
+  cursor: pointer;
+  transition: all 0.75s;
+}
+.employees .search-main .add .add-icon:hover {
+  scale: 1.25;
+}
+.employees .employee-cards {
+  height: 100%;
+  width: 90%;
+  margin-top: 2.5rem;
+  position: relative;
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.employees .employee-cards .employee-card {
+  /* ...more css */
+  width: 15rem;
+  height: 12.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  background: white;
+  transition: all 0.95s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.employees .employee-cards .employee-card p {
+  color: black;
+  /* ...more css */
+}
+.employees .employee-cards .employee-card .employee-error, .employees .employee-cards .employee-card .success-delete {
+  justify-self: center;
+  width: 15rem;
+  height: 12.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.employees .employee-cards .employee-card .employee-error p, .employees .employee-cards .employee-card .success-delete p {
+  color: white;
+}
+.employees .employee-cards .employee-card .employee-error {
+  background-color: rgb(252, 139, 139);
+}
+.employees .employee-cards .employee-card .success-delete {
+  background-color: rgb(172, 122, 58);
+}
+.employees .employee-cards .employee-card .buttons {
+  cursor: pointer;
+  align-items: center;
+}
+.employees .employee-cards .employee-card .buttons img {
+  height: 15.5px;
+  width: 15.5px;
+  scale: 0.85;
+  object-fit: contain;
+  margin: 0 1rem;
+  border-radius: 3px;
+  transition: all 0.25s ease;
+}
+.employees .employee-cards .employee-card .buttons img:hover {
+  scale: 1;
+}
+.employees .employee-cards .employee-card .buttons img:active {
+  transform: scale(0.75);
+}
+.employees .employee-cards .employee-loading {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

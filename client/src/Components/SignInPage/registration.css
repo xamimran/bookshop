@@ -1,0 +1,134 @@
+/* Example of css to prevent css overlap */
+/* Emphasis on using the "super" parent class, ie. "registration" */
+.registration {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQ5dYwZrrBDV9aeqPsNVuOAdBPO7hNgz72QpddLHNGmtAbBEkqzSYXFyq0a8LlwAsIrA&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 744px;
+}
+.registration div {
+  display: flex;
+}
+.registration div p {
+  color: beige;
+}
+
+.registration-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-bottom: 100px;
+  color: white;
+  height: 20px;
+}
+.registration-nav h2 {
+  width: 20%;
+  margin-left: 70px;
+}
+.registration-nav button {
+  height: 30px;
+  width: 100px;
+  color: white;
+  border-color: #e0c8ac;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  margin-left: 60%;
+  margin-top: 20px;
+  padding-right: 25PX;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.registration-container {
+  display: flex;
+  justify-content: center;
+  height: 480px;
+  width: 100%;
+}
+.registration-inputs-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 15%;
+  height: 210px;
+}
+.registration-inputs-container input {
+  border-radius: 6px;
+  padding: 10px;
+  padding-left: 40px;
+  opacity: 0.7;
+  border: 1.5px solid #ccc;
+  resize: vertical;
+  width: 70%;
+  height: 27px;
+
+}
+.registration-button-form button {
+  margin-top: 30px;
+  height: 30px;
+  width: 60%;
+  margin-left: 15%;
+  background: white;
+  color: blue;
+  border-color: blue;
+  border-radius: 10px;
+}
+.registration-signup-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+  height: 100%;
+}
+.registration-signup-form h3{
+  font-size: 20px;
+  font-weight: 400;
+}
+.registration-signup-form form {
+  height: 70%;
+}
+.bookshop-registration-inputs-container form{
+  border-radius: 6px;
+  padding: 10px;
+  padding-left: 40px;
+  opacity: 0.7;
+  border: 1.5px solid #ccc;
+  resize: vertical;
+  width: 70%;
+  height: 27px;
+}
+.registration-welcome-message {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgba(157, 165, 184, 0) 40%, #311996 180%);
+  border-radius: 0px 10px 10px 0px;
+  width: 40%;
+}
+.registration-welcome-message img {
+  width: 60%;
+  margin-left: 20%;
+}
+.registration-welcome-message p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.home_icon{
+  font-size: 1rem;
+  color: black;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+}
+.home_link{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-right: 19px;
+}
