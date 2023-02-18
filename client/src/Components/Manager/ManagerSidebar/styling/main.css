@@ -4,7 +4,8 @@
   left: 0;
   height: 100vh;
   min-width: 15rem;
-  background-image: url("https://img.freepik.com/premium-photo/old-black-brick-wall-background_73152-4032.jpg");
+  background-image: url("");
+  background-color: #ca5353;
   background-position: center;
   background-size: cover;
 }

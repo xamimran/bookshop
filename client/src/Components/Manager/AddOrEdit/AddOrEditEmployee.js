@@ -43,26 +43,38 @@ export default function AddOrEditEmployee({employees }) {
 
   return (
     <div className="add-edit-main">
-      <div className="title-logout">
-        <h1>{user &&user.bookshop_name? user.bookshop_name:"BookShop"} Manager</h1>
-        <div>Logout<img src="/svgs/logout.svg" alt=""/></div>
-      </div>
       <form onSubmit={handleUpdate} id="form">
-          <label>
-            <p>Name:</p> <input required type="text" name="name" onChange={handleChange} placeholder={editEmployee&& editEmployee.name}/>
-          </label>
-          <label>
-            <p>Email:</p> <input required type="email" name="email" onChange={handleChange} placeholder={editEmployee&& editEmployee.email}/>
-          </label>
-          <label>
-            <p>Password:</p>
-            <input required type="password" name="password" onChange={handleChange} />
-          </label>
-        <div className="buttons">
-          <button type="submit" className="add-update">{employeeId?"Update":"Add"}</button>
+        <div class="container mt-5 mb-5 d-flex justify-content-center">
+            <div class="card px-1 py-4">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">{user &&user.bookshop_name? user.bookshop_name:"BookShop"} Manager</h3>
+                    <h6 class="information mt-4">Please provide following information</h6>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <input class="form-control" type="text" onChange={handleChange} placeholder={editEmployee&& editEmployee.name}/> </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="input-group"> <input class="form-control" type="text" onChange={handleChange} placeholder={editEmployee&& editEmployee.email}/> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="input-group"> <input class="form-control" type="password" onChange={handleChange} placeholder="Password"/> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small class="agree-text">Update / Add this button </small> <a href="#" class="terms">Terms & Conditions</a> </div> 
+                    <button class="btn btn-danger btn-block confirm-button">{employeeId?"Update":"Add"}</button>
+                </div>
+            </div>
         </div>
-      
-    </form>
+      </form>
   </div>
   );
 }
