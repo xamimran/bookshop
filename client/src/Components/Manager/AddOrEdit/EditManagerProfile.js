@@ -51,35 +51,60 @@ export default function EditManagerProfile() {
     <div className="add-edit-main">
     <div className="title-logout">
       <h1>{user &&user.bookShopName? user.bookShopName:"BookShop"} Manager</h1>
-      <div>Logout<img src="/svgs/logout.svg" alt=""/></div>
     </div>
-    <form onSubmit={handleUpdate}>
-      <label>
-        <p>username: </p>
-        <input  onChange={handleChange} name="name" type="text" placeholder={user&& user.name}/>
-      </label> 
-      <label>
-        <p>Email: </p>
-        <input  onChange={handleChange} name="email" type="email" placeholder={user&& user.email}/>
-      </label> 
-      <label>
-        <p>Password: </p>
-        <input  onChange={handleChange} name="password" type="password"/>
-      </label>
-      <label>
-        <p>BookShop <br/>Name: </p>
-        <input  onChange={handleChange} name="bookshop_name" type="text" placeholder={user&& user.bookshop_name}/>
-      </label>
-      <label>
-        <p>Items Alert<br/>Limit: </p>
-        <input  onChange={handleChange} min="100" max="1000" name="bookshop_items_alert_limit" type="number" placeholder={user && user.bookshop_items_alert_limit}/>
-      </label>
-      <div className="buttons">
-        <button type="submit" className="add-update">Update</button>
-        <button className="delete" onClick={handleDelete}>Delete Profile</button>
+    <div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                        <input class="form-control" onChange={handleChange} name="name" type="text" placeholder="User Name"/> 
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                          <div class="input-group"> 
+                            <input class="form-control" onChange={handleChange} name="email" type="email" placeholder={user&& user.email}/> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                          <div class="input-group"> 
+                          <input class="form-control" onChange={handleChange} name="password" type="password"/> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                          <div class="input-group"> 
+                          <input class="form-control" onChange={handleChange} name="bookshop_name" type="text" placeholder={user&& user.bookshop_name}/> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                          <div class="input-group"> 
+                          <input class="form-control"  onChange={handleChange} min="100" max="1000" name="bookshop_items_alert_limit" type="number" placeholder={user && user.bookshop_items_alert_limit}/> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row"> 
+                  <button class="btn btn-block confirm-button column border border-danger" style={{color:"red"}}>Update</button>
+                  <button class="btn btn-danger btn-block confirm-button column mr-2" onClick={handleDelete}>Delete Profile</button>
+              </div>
+          </div>
       </div>
-      
-    </form>
+      </div>
   </div>
   );
 }
